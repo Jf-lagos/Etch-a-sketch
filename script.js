@@ -34,17 +34,24 @@ function makeColumns(cellNum) {
     };
 };
 
+
 const button = document.querySelector('button');
 
-button.onclick = function () {
-    defaultGrid()
-   };
+button.onclick = clear();
 
 
+function clear() {
+    let select = document.querySelectorAll('#cell', '#gridRow');
+    select.forEach(function(toChange) {
+      toChange.style.color = "white";
+    })
+  }
+  
 
 /*
 
-- Selectionner toutes les classes blue
-- color:none
+- Select the classes "div", "cell"
+- Loop through them
+- Apply a new color
 
 */
