@@ -1,16 +1,23 @@
-.cell {
-  border: 1px solid gray;
-  min-width: 20px;
-  min-height: 20px;
-  display: inline-block;
-  margin-right: 2px;
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:660px;
+	width:660px;
+	padding: 0;
+	border: none;
 }
 
-.my-color-class {
-  background-color: blue;
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+	display:inline-block;
 }
 
-.new-class {
-  background-color: red;
+.newGrid {
+  position: center;
 }
-
